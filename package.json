@@ -1,0 +1,19 @@
+{
+  "name": "ada_oruche-js_libraries-assignment5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server --baseDir=\"public\""
+  },
+  "keywords": [],
+  "author": "Ada Oruche",
+  "private": true,
+  "license": "ISC",
+  "dependencies": {
+    "@glidejs/glide": "^3.7.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
