@@ -9,7 +9,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Hero image Ken Burns effect 
+// Hero image
 let heroImg = document.querySelector('.hero__img');
 if (heroImg) {
   heroImg.addEventListener('load', () => heroImg.classList.add('loaded'));
@@ -114,7 +114,7 @@ window.addEventListener('load', () => {
   let bookingSection = document.getElementById('bookingSection');
   if (bookingSection) bookingObserver.observe(bookingSection);
 
-  // ── Anime.js — destination cards on scroll ───────────────
+  // Anime.js — destination cards on scroll
   let cardObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
