@@ -1,237 +1,314 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Js Libraries</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Libraries</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Glide CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/css/glide.core.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/css/glide.theme.min.css">
+    <!-- Glide CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/css/glide.theme.min.css"
+    />
 
-  <!-- Lightbox CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <!-- Lightbox CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+    />
 
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- NAV -->
+    <nav class="nav">
+      <a class="nav__logo" href="#">Voyager</a>
 
-  <!-- NAV -->
-  <nav class="nav">
-    <a class="nav__logo" href="#">Voyager</a>
+      <ul class="nav__links">
+        <li><a href="#featured">Destinations</a></li>
+        <li><a href="#trending">Trending</a></li>
+        <li><a href="#bookingSection">Book</a></li>
+      </ul>
 
-    <ul class="nav__links">
-      <li><a href="#featured">Destinations</a></li>
-      <li><a href="#trending">Trending</a></li>
-      <li><a href="#bookingSection">Book</a></li>
-    </ul>
+      <!-- Hamburger button (mobile only) -->
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
 
-    <!-- Hamburger button (mobile only) -->
-    <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </nav>
-
-  <!-- Mobile drawer (outside nav) -->
-  <div class="nav__drawer" id="navDrawer">
-    <a href="#featured" class="drawer__link">Destinations</a>
-    <a href="#trending" class="drawer__link">Trending</a>
-    <a href="#bookingSection" class="drawer__link">Book</a>
-  </div>
-
-  <!-- HERO -->
-  <section class="hero">
-    <img class="hero__img" src="./assets/images/Zebras.jpg" alt="African safari landscape">
-    <div class="hero__overlay">
-      <span class="hero__eyebrow">Curated Travel Experiences</span>
-      <h1 class="hero__title" id="pageTitle">The World<br>Awaits You</h1>
-      <div class="hero__rule" id="heroRule"></div>
-      <p class="hero__sub">Discover extraordinary destinations, crafted for the curious traveller</p>
-      <a class="hero__cta" href="#bookingSection">Plan Your Journey</a>
+    <!-- Mobile drawer (outside nav) -->
+    <div class="nav__drawer" id="navDrawer">
+      <a href="#featured" class="drawer__link">Destinations</a>
+      <a href="#trending" class="drawer__link">Trending</a>
+      <a href="#bookingSection" class="drawer__link">Book</a>
     </div>
-  </section>
 
-  <!-- FEATURED SLIDER -->
-  <section id="featured" class="section">
-    <h2 class="section__title">Featured Destinations</h2>
-
-    <div class="glide">
-      <div class="glide__track" data-glide-el="track">
-        <ul class="glide__slides">
-
-          <li class="glide__slide">
-            <a href="./assets/images/Milan.jpg" data-lightbox="travel" data-title="Milan, Italy">
-              <div class="slide__wrap">
-                <img src="./assets/images/Milan.jpg" alt="Milan, Italy">
-                <div class="slide__caption">Milan, Italy</div>
-              </div>
-            </a>
-          </li>
-
-          <li class="glide__slide">
-            <a href="./assets/images/Cape Town.jpg" data-lightbox="travel" data-title="Cape Town, South Africa">
-              <div class="slide__wrap">
-                <img src="./assets/images/Cape Town.jpg" alt="Cape Town">
-                <div class="slide__caption">Cape Town, South Africa</div>
-              </div>
-            </a>
-          </li>
-
-          <li class="glide__slide">
-            <a href="./assets/images/Nairobi, Kenya.jpg" data-lightbox="travel" data-title="Nairobi, Kenya">
-              <div class="slide__wrap">
-                <img src="./assets/images/Nairobi, Kenya.jpg" alt="Nairobi, Kenya">
-                <div class="slide__caption">Nairobi, Kenya</div>
-              </div>
-            </a>
-          </li>
-
-        </ul>
+    <!-- HERO -->
+    <section class="hero">
+      <img
+        class="hero__img"
+        src="./assets/images/Zebras.jpg"
+        alt="African safari landscape"
+      />
+      <div class="hero__overlay">
+        <span class="hero__eyebrow">Curated Travel Experiences</span>
+        <h1 class="hero__title" id="pageTitle">The World<br />Awaits You</h1>
+        <div class="hero__rule" id="heroRule"></div>
+        <p class="hero__sub">
+          Discover extraordinary destinations, crafted for the curious traveller
+        </p>
+        <a class="hero__cta" href="#bookingSection">Plan Your Journey</a>
       </div>
+    </section>
 
-      <div class="glide__arrows" data-glide-el="controls">
-        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&#8592;</button>
-        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&#8594;</button>
+    <!-- FEATURED SLIDER -->
+    <section id="featured" class="section">
+      <h2 class="section__title">Featured Destinations</h2>
+
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <a
+                href="./assets/images/Milan.jpg"
+                data-lightbox="travel"
+                data-title="Milan, Italy"
+              >
+                <div class="slide__wrap">
+                  <img src="./assets/images/Milan.jpg" alt="Milan, Italy" />
+                  <div class="slide__caption">Milan, Italy</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="glide__slide">
+              <a
+                href="./assets/images/Cape Town.jpg"
+                data-lightbox="travel"
+                data-title="Cape Town, South Africa"
+              >
+                <div class="slide__wrap">
+                  <img src="./assets/images/Cape Town.jpg" alt="Cape Town" />
+                  <div class="slide__caption">Cape Town, South Africa</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="glide__slide">
+              <a
+                href="./assets/images/Nairobi, Kenya.jpg"
+                data-lightbox="travel"
+                data-title="Nairobi, Kenya"
+              >
+                <div class="slide__wrap">
+                  <img
+                    src="./assets/images/Nairobi, Kenya.jpg"
+                    alt="Nairobi, Kenya"
+                  />
+                  <div class="slide__caption">Nairobi, Kenya</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            &#8592;
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            &#8594;
+          </button>
+        </div>
+
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+        </div>
       </div>
+    </section>
 
-      <div class="glide__bullets" data-glide-el="controls[nav]">
-        <button class="glide__bullet" data-glide-dir="=0"></button>
-        <button class="glide__bullet" data-glide-dir="=1"></button>
-        <button class="glide__bullet" data-glide-dir="=2"></button>
+    <!-- TRENDING DESTINATIONS -->
+    <section id="trending" class="section section--alt">
+      <h2 class="section__title">Trending Destinations</h2>
+
+      <div class="destinations">
+        <article class="dest-card">
+          <div class="dest-card__img-wrap">
+            <img src="./assets/images/Bali, Indonesia.jpg" alt="Bali" />
+            <div class="dest-card__overlay">
+              <span>Explore</span>
+            </div>
+          </div>
+          <div class="dest-card__body">
+            <h3 class="dest-card__title">Bali, Indonesia</h3>
+            <p class="dest-card__desc">
+              Temples, rice terraces, and endless coastline
+            </p>
+          </div>
+        </article>
+
+        <article class="dest-card">
+          <div class="dest-card__img-wrap">
+            <img src="./assets/images/Santorini, Greece.jpg" alt="Santorini" />
+            <div class="dest-card__overlay">
+              <span>Explore</span>
+            </div>
+          </div>
+          <div class="dest-card__body">
+            <h3 class="dest-card__title">Santorini, Greece</h3>
+            <p class="dest-card__desc">
+              White-washed cliffs above the Aegean Sea
+            </p>
+          </div>
+        </article>
+
+        <article class="dest-card">
+          <div class="dest-card__img-wrap">
+            <img src="./assets/images/Kyoto, Japan.jpg" alt="Kyoto" />
+            <div class="dest-card__overlay">
+              <span>Explore</span>
+            </div>
+          </div>
+          <div class="dest-card__body">
+            <h3 class="dest-card__title">Kyoto, Japan</h3>
+            <p class="dest-card__desc">
+              Ancient shrines, cherry blossoms, quiet lanes
+            </p>
+          </div>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- TRENDING DESTINATIONS -->
-  <section id="trending" class="section section--alt">
-    <h2 class="section__title">Trending Destinations</h2>
-
-    <div class="destinations">
-
-      <article class="dest-card">
-        <div class="dest-card__img-wrap">
-          <img src="./assets/images/Bali, Indonesia.jpg" alt="Bali">
-          <div class="dest-card__overlay">
-            <span>Explore</span>
-          </div>
+    <!-- BOOKING FORM -->
+    <section id="bookingSection" class="section section--booking">
+      <div class="booking__inner">
+        <div class="booking__left">
+          <span class="booking__eyebrow">Ready to go?</span>
+          <h2 class="booking__title">Plan Your<br />Dream Trip</h2>
+          <p class="booking__desc">
+            Fill in your details and one of our travel specialists will be in
+            touch within 24 hours.
+          </p>
         </div>
-        <div class="dest-card__body">
-          <h3 class="dest-card__title">Bali, Indonesia</h3>
-          <p class="dest-card__desc">Temples, rice terraces, and endless coastline</p>
-        </div>
-      </article>
 
-      <article class="dest-card">
-        <div class="dest-card__img-wrap">
-          <img src="./assets/images/Santorini, Greece.jpg" alt="Santorini">
-          <div class="dest-card__overlay">
-            <span>Explore</span>
-          </div>
-        </div>
-        <div class="dest-card__body">
-          <h3 class="dest-card__title">Santorini, Greece</h3>
-          <p class="dest-card__desc">White-washed cliffs above the Aegean Sea</p>
-        </div>
-      </article>
+        <div class="booking__right">
+          <form id="travelForm" data-parsley-validate novalidate>
+            <div class="field">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder=" "
+                required
+                data-parsley-minlength="3"
+                data-parsley-minlength-message="Name must be at least 3 characters."
+                data-parsley-required-message="Please enter your full name."
+              />
+              <label for="name">Full Name</label>
+            </div>
 
-      <article class="dest-card">
-        <div class="dest-card__img-wrap">
-          <img src="./assets/images/Kyoto, Japan.jpg" alt="Kyoto">
-          <div class="dest-card__overlay">
-            <span>Explore</span>
-          </div>
-        </div>
-        <div class="dest-card__body">
-          <h3 class="dest-card__title">Kyoto, Japan</h3>
-          <p class="dest-card__desc">Ancient shrines, cherry blossoms, quiet lanes</p>
-        </div>
-      </article>
+            <div class="field">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder=" "
+                required
+                data-parsley-required-message="Please enter a valid email address."
+              />
+              <label for="email">Email Address</label>
+            </div>
 
-    </div>
-  </section>
+            <div class="field">
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder=" "
+                required
+                data-parsley-required-message="Please enter your phone number."
+              />
+              <label for="phone">Phone Number</label>
+            </div>
 
-  <!-- BOOKING FORM -->
-  <section id="bookingSection" class="section section--booking">
-    <div class="booking__inner">
-      <div class="booking__left">
-        <span class="booking__eyebrow">Ready to go?</span>
-        <h2 class="booking__title">Plan Your<br>Dream Trip</h2>
-        <p class="booking__desc">Fill in your details and one of our travel specialists will be in touch within 24 hours.</p>
+            <div class="field">
+              <input
+                type="text"
+                id="travelDate"
+                name="travelDate"
+                placeholder=" "
+                required
+                data-parsley-required-message="Please enter your travel date."
+              />
+              <label for="travelDate">Travel Date (YYYY-MM-DD)</label>
+            </div>
+
+            <button class="btn-submit" type="submit">
+              Request My Trip &#8594;
+            </button>
+          </form>
+        </div>
       </div>
+    </section>
 
-      <div class="booking__right">
-        <form id="travelForm" data-parsley-validate novalidate>
-
-          <div class="field">
-            <input type="text" id="name" name="name" placeholder=" "
-              required
-              data-parsley-minlength="3"
-              data-parsley-minlength-message="Name must be at least 3 characters."
-              data-parsley-required-message="Please enter your full name.">
-            <label for="name">Full Name</label>
-          </div>
-
-          <div class="field">
-            <input type="email" id="email" name="email" placeholder=" "
-              required
-              data-parsley-required-message="Please enter a valid email address.">
-            <label for="email">Email Address</label>
-          </div>
-
-          <div class="field">
-            <input type="text" id="phone" name="phone" placeholder=" "
-              required
-              data-parsley-required-message="Please enter your phone number.">
-            <label for="phone">Phone Number</label>
-          </div>
-
-          <div class="field">
-            <input type="text" id="travelDate" name="travelDate" placeholder=" "
-              required
-              data-parsley-required-message="Please enter your travel date.">
-            <label for="travelDate">Travel Date (YYYY-MM-DD)</label>
-          </div>
-
-          <button class="btn-submit" type="submit">Request My Trip &#8594;</button>
-
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p class="footer__logo">Voyager</p>
-    <p class="footer__copy">&copy; 2026 Voyager Travel. All rights reserved.</p>
-  </footer>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p class="footer__logo">Voyager</p>
+      <p class="footer__copy">
+        &copy; 2026 Voyager Travel. All rights reserved.
+      </p>
+    </footer>
 
     <!-- jQuery (Parsley dependency) -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-  <!-- Glide JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/glide.min.js" defer></script>
+    <!-- Glide JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/glide.min.js"
+      defer
+    ></script>
 
-  <!-- Parsley -->
-  <script src="https://cdn.jsdelivr.net/npm/parsleyjs@2.9.2/dist/parsley.min.js" defer></script>
+    <!-- Parsley -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/parsleyjs@2.9.2/dist/parsley.min.js"
+      defer
+    ></script>
 
-  <!-- Cleave -->
-  <script src="https://cdn.jsdelivr.net/npm/cleave.js@1/dist/cleave.min.js" defer></script>
+    <!-- Cleave -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/cleave.js@1/dist/cleave.min.js"
+      defer
+    ></script>
 
-  <!-- Anime.js -->
-  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js" defer></script>
+    <!-- Anime.js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"
+      defer
+    ></script>
 
-  <!-- Lightbox -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer></script>
+    <!-- Lightbox -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"
+      defer
+    ></script>
 
-  <!-- Main JS -->
-  <script src="./assets/js/main.js" defer></script>
-  
-</body>
+    <!-- Main JS -->
+    <script src="./assets/js/main.js" defer></script>
+  </body>
 </html>

@@ -537,7 +537,7 @@ body {
   letter-spacing: 0.05em;
 }
 
-/* Breakpoint: Tablet (900px) */
+/* Tablet (900px) */
 @media (max-width: 900px) {
   .nav { padding: 16px 28px; }
   .nav__links { display: none; }
@@ -549,7 +549,7 @@ body {
   .booking__inner { grid-template-columns: 1fr; gap: 40px; }
 }
 
-/* Breakpoint: Mobile (580px) */
+/* Mobile (580px) */
 @media (max-width: 580px) {
   .nav { padding: 14px 20px; }
   .nav__logo { font-size: 22px; }
@@ -566,7 +566,7 @@ body {
   .footer { padding: 32px 5%; }
 }
 
-/* Breakpoint: Extra small (380px) */
+/* Extra small (380px) */
 @media (max-width: 380px) {
   .nav__logo { font-size: 18px; }
   .hero__eyebrow { font-size: 9px; }
